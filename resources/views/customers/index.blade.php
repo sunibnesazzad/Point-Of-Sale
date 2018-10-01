@@ -16,7 +16,7 @@
                     <p>Total Number of Users : <strong>{{$number}}</strong></p>
                 </div>
                 <div class="col-md-4">
-                    <a class="btn btn-primary" href="{{ route('customers.add') }}">+Add Customers</a>
+                    <a class="btn btn-primary" href="{{ route('customers.add') }}">+Add Users</a>
                 </div>
             </div>
             <hr>

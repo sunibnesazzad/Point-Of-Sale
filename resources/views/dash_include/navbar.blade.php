@@ -6,7 +6,7 @@
 </nav>
 <section class="title-bar">
     <div class="logo">
-        <h1><a href="/">{{--<img src="/image/logo.jpg" alt="" class="thumb-sm2" />--}}Point of Sale</a></h1>
+        <h1><a href="/">{{--<img src="/image/logo.jpg" alt="" class="thumb-sm2" />--}}I & E Tracker</a></h1>
     </div>
 
     <div class="header-right">
@@ -39,7 +39,7 @@
                         </a>
                         <ul class="dropdown-menu drp-mnu">
                             <li> <a href="/dash/{{Auth::user()->id}}"><i class="fa fa-cog"></i> Profile</a> </li>
-                            {{-- <li> <a href="#"><i class="fa fa-user"></i> Settings</a> </li>--}}
+                           {{-- <li> <a href="#"><i class="fa fa-user"></i> Settings</a> </li>--}}
                             <li> <a href="{!! route('logout') !!}"><i class="fa fa-sign-out"></i> Logout</a> </li>
                         </ul>
                     </li>

@@ -52,7 +52,7 @@
                                         <div class="form-group">
                                             <label for="inputPassword3" class="col-sm-2 control-label">Position</label>
                                             <div class="col-sm-9">
-                                                <input type="text" name="position" class="form-control" id="position" value="{{$user->profile->position}}" disabled>
+                                                <input type="text" name="position" class="form-control" id="position" value="{{$user->position}}" disabled>
                                             </div>
                                         </div>
                                         <div class="form-group">

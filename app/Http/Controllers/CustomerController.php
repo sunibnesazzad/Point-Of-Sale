@@ -7,12 +7,18 @@ use Auth;
 use App\User;
 use App\Profile;
 use DataTables;
+use App\Product;
+use App\OrderProduct;
+use Illuminate\Support\Facades\DB;
 
 class CustomerController extends Controller
 {
     public function show(){
         $user = Auth::user();
-        return view('dashbord.admin_dash',compact('user'))->with('title','Dashboard');
+        $num2 = User::count();
+        $num1 = Product::count();
+        $details = DB::table('order_products')->where('user_id', $user->id)->get();
+        return view('dashbord.admin_dash',compact('user','num1','num2','details'))->with('title','Dashboard');
 
     }
 

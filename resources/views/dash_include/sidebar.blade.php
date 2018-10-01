@@ -1,31 +1,18 @@
 <nav class="main-menu">
     <ul>
         <li>
-            <a href="{!! route('enterDetail') !!}">
+            <a href="{!! route('dashboard') !!}">
                 <i class="fa fa-home nav_icon"></i>
                 <span class="nav-text">
 					Dashboard
 					</span>
             </a>
         </li>
-        <li class="has-subnav">
-            <a href="javascript:">
-                <i class="fa fa-file-text-o nav_icon"></i>
+        <li class="">
+            <a href="{!! route('sales.index') !!}">
+                <i class="fa fa-list-ul"></i>
                 <span class="nav-text">Sales</span>
-                <i class="icon-angle-right"></i><i class="icon-angle-down"></i>
             </a>
-            <ul>
-                <li>
-                    <a class="subnav-text" href="{{--{!! route('enterDetail') !!}--}}">
-                        Add Income/Expense
-                    </a>
-                </li>
-                <li>
-                    <a class="subnav-text"href="{{--{!! route('showDetail') !!}--}}">
-                        Show All Income/Expense
-                    </a>
-                </li>
-            </ul>
         </li>
         {{--product Part--}}
         <li class="has-subnav">

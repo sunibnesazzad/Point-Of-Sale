@@ -12,7 +12,7 @@ use Image;
 class ProfileController extends Controller
 {
     public function show($id){
-        $user=  User::find($id);
+        $user=  Auth::user();
         return view('dashbord.dash_profile',compact('user'))->with('title',"Profile");
         /*return $user;*/
     }
@@ -29,7 +29,6 @@ class ProfileController extends Controller
         $this->validate($request,[
             'name' => 'required',
             'phone' => 'required',
-            'position' => 'required',
             'address' => 'required',
             'about' => 'required'
         ]);
@@ -40,7 +39,6 @@ class ProfileController extends Controller
         $data1 = array(
             /*'name' => $request->input('name'),*/
             'phone' => $request->input('phone'),
-            'position' => $request->input('position'),
             'address' => $request->input('address'),
             'about_me' => $request->input('about'),
 

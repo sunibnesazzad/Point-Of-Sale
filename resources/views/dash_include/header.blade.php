@@ -16,11 +16,6 @@
     <!-- font-awesome icons -->
     <link rel="stylesheet" href="{{asset('admin_dash_theme/css/font.css')}}" type="text/css"/>
     <link href="{{asset('admin_dash_theme/css/font-awesome.css')}}" rel="stylesheet">
-    {{--Table--}}
-    <link rel="stylesheet" type="text/css" href="{{asset('admin_dash_theme/css/table-style.css')}}" />
-    <link rel="stylesheet" type="text/css" href="{{asset('admin_dash_theme/css/basictable.css')}}" />
-    <script type="text/javascript" src="{{asset('admin_dash_theme/js/jquery.basictable.min.js')}}"></script>
-    {{--end of table--}}
     <!-- //font-awesome icons -->
     <script src="{{asset('admin_dash_theme/js/jquery2.0.3.min.js')}}"></script>
     <script src="{{asset('admin_dash_theme/js/modernizr.js')}}"></script>
@@ -41,6 +36,50 @@
             });
         });
     </script>
+    {{--Scrips for CKEditor--}}
+    <script src="{{ asset('vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
+    <script type="text/javascript">CKEDITOR.replace( 'editor1' );</script>
+
+{{-- <script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
+ <script>
+     tinymce.init({
+         selector: '#mytextarea'
+     });
+ </script>--}}
+
+<!-- tables -->
+    <link rel="stylesheet" type="text/css" href="{{asset('admin_dash_theme/css/table-style.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset('admin_dash_theme/css/basictable.css')}}" />
+    <script type="text/javascript" src="{{asset('admin_dash_theme/js/jquery.basictable.min.js')}}"></script>
+
     <link rel="stylesheet" type="text/css" href="{{asset('//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css')}}">
+{{--<script type="text/javascript">
+    $(document).ready(function() {
+        $('#table').basictable();
+
+        $('#table-breakpoint').basictable({
+            breakpoint: 768
+        });
+
+        $('#table-swap-axis').basictable({
+            swapAxis: true
+        });
+
+        $('#table-force-off').basictable({
+            forceResponsive: false
+        });
+
+        $('#table-no-resize').basictable({
+            noResize: true
+        });
+
+        $('#table-two-axis').basictable();
+
+        $('#table-max-height').basictable({
+            tableWrapper: true
+        });
+    });
+</script>--}}
+<!-- //tables -->
 
 </head>

@@ -13,12 +13,13 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <a class="btn btn-primary" href="{{ route('customers.add') }}">Add Customers</a>
+                    <p>Number of Customers : <strong>{{$num2}}</strong></p>
                 </div>
                 <div class="col-md-6">
-                    {{--<a class="btn btn-primary" href="{{ route('customers.add') }}">Add Customers</a>--}}
+                    <p>Number of Products : <strong>{{$num1}}</strong></p>
                 </div>
             </div>
+
             <hr>
             <div class="well">
                 <div class="w3l-table-info">
@@ -26,18 +27,21 @@
                     <table id="table">
                         <thead>
                         <tr>
-                            <th>Account</th>
-                            <th>Date</th>
-                            <th>Description</th>
-                            <th>Category</th>
-                            <th>Income Money IN</th>
-                            <th>Expense Money Out</th>
-                            <th>Debit/Credit</th>
-                            <th>Overall Balance</th>
+                            <th class="text-center">Order Id</th>
+                            <th class="text-center">Category</th>
+                            <th class="text-center">Number of Product</th>
+                            <th class="text-center">Total sale</th>
                         </tr>
                         </thead>
                         <tbody>
-
+                        @foreach($details as $product)
+                            <tr>
+                                <td class="text-center"><strong>{!! $product->id !!}</strong></td>
+                                <td class="text-center"><strong>{!! $product->brand_name !!}</strong></td>
+                                <td class="text-center"><strong>{!! $product->quantity !!}</strong></td>
+                                <td class="text-center"><strong>{!! $product->total !!}</strong></td>
+                            </tr>
+                        @endforeach
                         </tbody>
                     </table>
                 </div>
