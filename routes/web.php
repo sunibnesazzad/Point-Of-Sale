@@ -66,14 +66,9 @@ Route::group(array('middleware' => 'auth'), function ()
         'uses' 	=>	'InvoiceController@show'
     ]);
 
-    Route::post('/payment', [
-        'as'	=>	'product.payment',
-        'uses' 	=>	'OrderController@payment'
-    ]);
-
-    Route::get('/remove/product/{id}', [
-        'as'	=>	'product.remove',
-        'uses' 	=>	'OrderController@remove'
+    Route::get('/pdfview/{id}', [
+        'as'	=>	'pdfview',
+        'uses' 	=>	'InvoiceController@pdf'
     ]);
 
 });

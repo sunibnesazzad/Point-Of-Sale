@@ -59,7 +59,7 @@
                                 <td class="text-center"><strong>{!! $product->quantity !!}</strong></td>
                                 <td class="text-center"><strong>{!! $product->sell_price !!}</strong></td>
                                 <td class="text-center"><strong>{!! $order->discount !!}</strong></td>
-                                <td class="text-center"><strong>{!! $product->sell_price !!}</strong></td>
+                                <td class="text-center"><strong>{!! $product->total !!}</strong></td>
                             </tr>
                         @endforeach
                         </tbody>
@@ -92,7 +92,7 @@
                         <div class="col-md-9">
                         </div>
                         <div class="col-md-3">
-                            <button class="btn btn-primary">Print</button>
+                            <a class="btn btn-primary" href="{!! route('pdfview', $order->id) !!}">Print</a>
                         </div>
                     </div>
                 </div>

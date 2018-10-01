@@ -51,21 +51,7 @@
 
 
 
-@section('scripts')
 
-    <script type="text/javascript">
-            $('#customer').DataTable({
-                "processing": true,
-                "serverSide": true,
-                "ajax": '{{ route('datatable.customers') }}',
-                "columns": [
-                    { "data": "id" },
-                    { "data": "name" },
-                    { "data": "position" },
-                ]
-            });
-    </script>
-@endsection
 
 
 
