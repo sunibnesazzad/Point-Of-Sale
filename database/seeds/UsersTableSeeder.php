@@ -35,7 +35,7 @@ class UsersTableSeeder extends Seeder
         $user2->save();
         //creating profile part
         $profile2 = new Profile;
-        $profile2->user_id = $user->id;
+        $profile2->user_id = $user2->id;
         /*$profile2->position= 'cashier';*/
         $profile2->save();
 
