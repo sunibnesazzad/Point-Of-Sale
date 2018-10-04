@@ -12,4 +12,5 @@
 <p> c.php artisan migrate </p>
 <p> d.php artisan db:seed </p>
 <p> e.php artisan serve </p>
-<p> 6.That's it for this project. </p>
+<p> 6.This is it for Web part. </p>
+<p> 7.For testing the Api part first run command "php artisan passport:install" then "php artisan serve".</p>

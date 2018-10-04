@@ -17,7 +17,7 @@ class UsersTableSeeder extends Seeder
         $user = new User();
         $user->name = 'admin';
         $user->email = 'admin@gmail.com';
-        $user->password = bcrypt('123456');
+        $user->password = bcrypt('12345678');
         $user->position= 'admin';
         $user->save();
         //creating profile part
@@ -28,9 +28,9 @@ class UsersTableSeeder extends Seeder
 
         //creating admin
         $user2 = new User();
-        $user2->name = 'Naushaba Zerin';
-        $user2->email = 'zerin@gmail.com';
-        $user2->password = bcrypt('123456');
+        $user2->name = 'User';
+        $user2->email = 'user@gmail.com';
+        $user2->password = bcrypt('12345678');
         $user2->position= 'cashier';
         $user2->save();
         //creating profile part

@@ -26,6 +26,39 @@ class InvoiceController extends Controller
 
     }
 
+
+    //For showing Invoice in API
+
+    public function test($id){
+
+        $order = Order::find($id);
+
+        $details = DB::table('order_products')->where('order_id', $order->id)->get();
+
+        /*$change = $order->customer_cash - $order->total_price;*/
+
+
+        $data[] = ['id' => $order->id ];
+        foreach ($details  as $detail){
+            $data[] = [
+                'product code' => $detail->brand_name,
+                'product name' => $detail->category,
+                'Qty' => $detail->quantity,
+                'price' => $detail->sell_price,
+                'discount' => $order->discount,
+                'ammount' => $detail->total
+
+            ];
+        }
+        $data[] = ['total' => $order->total_price ];
+        return $data;
+
+
+    }
+
+
+
+
     //For showing PDF
 
     public function pdf($id){

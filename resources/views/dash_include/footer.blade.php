@@ -3,7 +3,7 @@
 
 <!-- footer -->
 <div class="footer">
-    <p >&copy; 2018 Income & Expense Tracker. All Rights Reserved | Developed by <a href="" target="_blank"><strong><i>Sun Ibne Sazzad</i></strong></a></p>
+    <p >&copy; 2018 Point Of Sale. All Rights Reserved | Developed by <a href="" target="_blank"><strong><i>Sun Ibne Sazzad</i></strong></a></p>
 </div>
 <!-- //footer -->
 

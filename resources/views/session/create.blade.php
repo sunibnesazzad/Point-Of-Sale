@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Income & Expense- Log In</title>
+    <title>Point of Sale</title>
 
     <!-- //Meta Tags -->
     <!-- Font-Awesome-CSS -->
@@ -29,7 +29,7 @@
 
 <body>
 <!--background-->
-<h1><i>Income & Expense Tracker</i></h1>
+<h1><i>Point Of Sale</i></h1>
 <!-- Main-Content -->
 <div class="main-w3layouts-form">
     <h2>Login to your account</h2>
@@ -61,7 +61,7 @@
 <!--// Main-Content-->
 <!-- copyright -->
 <div class="copyright-w3-agile">
-    <p class="agile-copyright">&copy; 2018 Income & Expense Tracker. All Rights Reserved | Developed by <a href="" target="_blank"><strong><i>Sun Ibne Sazzad</i></strong></a></p>
+    <p class="agile-copyright">&copy; 2018 Point Of Sale. All Rights Reserved | Developed by <a href="" target="_blank"><strong><i>Sun Ibne Sazzad</i></strong></a></p>
 </div>
 <!--// copyright -->
 <!--//background-->

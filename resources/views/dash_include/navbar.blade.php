@@ -6,7 +6,7 @@
 </nav>
 <section class="title-bar">
     <div class="logo">
-        <h1><a href="/">{{--<img src="/image/logo.jpg" alt="" class="thumb-sm2" />--}}I & E Tracker</a></h1>
+        <h1><a href="/">Point Of Sale</a></h1>
     </div>
 
     <div class="header-right">

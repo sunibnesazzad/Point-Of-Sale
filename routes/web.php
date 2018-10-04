@@ -12,6 +12,13 @@
 */
 //Log in routes
 
+/*Route::get('/invoice/{id}', [
+    'as'	=>	'invoice.show',
+    'uses' 	=>	'InvoiceController@test'
+]);*/
+
+
+
 Route::get('/', 'SessionController@create')->name('login');
 
 Route::post('/log','SessionController@store');
@@ -65,6 +72,7 @@ Route::group(array('middleware' => 'auth'), function ()
         'as'	=>	'invoice.show',
         'uses' 	=>	'InvoiceController@show'
     ]);
+
 
     Route::get('/pdfview/{id}', [
         'as'	=>	'pdfview',
